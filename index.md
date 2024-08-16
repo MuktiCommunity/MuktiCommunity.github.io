@@ -3,7 +3,7 @@ layout: home
 title: Home
 description: >-
   Welcome to the Mukti GitHub repository! We are a dynamic student club based in Bangalore, India, fostering collaboration and innovation in the realm of technology. Our focus areas include cybersecurity, network security, system administration, OSINT, and software development.
-image: /assets/images/main.jpg
+image: /assets/images/main.png
 main_content: >
   # Mukti : स्वतंत्रता सर्वदा.
 
