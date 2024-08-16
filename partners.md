@@ -9,7 +9,7 @@ image : https://i.pinimg.com/originals/aa/e6/21/aae621d97bdea36d00aad9db5837b598
 Mukti has had the privilege of collaborating with some of the most esteemed organizations in the FOSS community, including **IIT Bombay’s Trust Lab, Foss United, and DeepRoot Linux**.
 
 
-<img src="https://github.com/user-attachments/assets/03fca4f0-f83e-4c35-9c59-f81d3334aa76" width="400">
+<img src="https://github.com/user-attachments/assets/3a56f43c-d281-4788-b84c-011782a95b7d" width="400">
 
 
 Our partnership with **Trust Lab at IITB** was particularly memorable during their **FOSSx event**, where Mukti served as the knowledge partner. This collaboration allowed us to share our expertise, exchange ideas, and contribute to meaningful discussions on the future of open-source technologies. We mentored 100+ teams across India and worked with the students to develop and produce quality whitepapers on OpenSource Cybersecurity tools.
