@@ -20,7 +20,6 @@ We are also proud to be one of the [FOSS clubs](https://fossunited.org/clubs/muk
 
 
 <img src="https://github.com/user-attachments/assets/2e3d052a-fb16-412e-a107-aaf3e9526221" alt="Foss United Support" width="400"/>
-<br>
 <img src="https://github.com/user-attachments/assets/f913e1e8-0a19-49ff-9497-71b4d1bba244" alt="IndiaFOSS Community Partner" width="400"/>
 
 Additionally, Mukti has had the honor of being invited to IndiaFOSS, organized by Foss United, where we have served as a community partner for two years in a row. These experiences have not only strengthened our ties within the open-source ecosystem but have also enabled us to grow as a community committed to the ideals of freedom and collaboration in technology.
