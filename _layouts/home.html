@@ -28,36 +28,35 @@ layout: default
 {% if site.data.events %}
 <section
   id="events"
-  class="container mx-auto flex flex-col items-center justify-center min-h-screen"
+  class="container mx-auto py-16 px-4 md:px-8 flex flex-col items-center"
 >
-  <div class="py-16">
-    <h2 class="text-4xl font-bold text-center md:text-left text-gray-800">
-      Upcoming Events
-    </h2>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16"
-    >
-      {% for event in site.data.events %}
-      <div class="max-w-sm rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2 text-gray-900">{{ event.title }}</div>
-          <p class="text-gray-600 text-sm font-semibold mb-4">
-            {{ event.date }} • {{ event.location }}
-          </p>
-          <p class="text-gray-700 text-base">
-            {{ event.description }}
-          </p>
-        </div>
-        <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#FOSS</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Community</span>
-        </div>
+  <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+    Upcoming Events
+  </h2>
+  <div
+    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12"
+  >
+    {% for event in site.data.events %}
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+      <div class="p-6">
+        <h3 class="font-bold text-2xl text-gray-900 mb-2">{{ event.title }}</h3>
+        <p class="text-gray-600 text-sm mb-4">
+          {{ event.date }} • {{ event.location }}
+        </p>
+        <p class="text-gray-700 text-base">
+          {{ event.description }}
+        </p>
       </div>
-      {% endfor %}
+      <div class="px-6 py-4 border-t border-gray-200 bg-gray-50">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#FOSS</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Community</span>
+      </div>
     </div>
+    {% endfor %}
   </div>
 </section>
 {% endif %}
+
 
 
 
