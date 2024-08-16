@@ -1,16 +1,12 @@
 # _data/events.yml
 
-- title: "Event 1"
-  date: "2024-09-15"
-  location: "Location 1"
-  description: "Description for Event 1"
+- title: "IndiaFOSS"
+  date: "7th & 8th September 2024"
+  location: "NIMHANS Convention Centre, Bangalore"
+  description: "The 4th edition of the Free and Open Source Software conference by the FOSS United community. "
 
-- title: "Event 2"
-  date: "2024-10-01"
-  location: "Location 2"
-  description: "Description for Event 2"
+- title: "SelfHosted Potfolio Workshop"
+  date: "October"
+  location: "MSRIT, Bangalore"
+  description: "An event where students can learn how to crate and selfhost their own blogsites!"
 
-- title: "Event 3"
-  date: "2024-10-20"
-  location: "Location 3"
-  description: "Description for Event 3"
