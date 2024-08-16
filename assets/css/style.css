@@ -12,26 +12,37 @@ a.gentle-clicked {
 
 #events {
   background: #f9f9f9;
-  margin: 10px;
-  padding: 10px;
 }
 
 #events .bg-white {
   background: #ffffff;
+  margin: 0 auto; /* Center align the cards */
 }
 
-#events .max-w-sm:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+#events .p-8 {
+  padding: 32px; /* Ensures there is more space inside the card */
 }
 
-#events h2 {
-  color: #333333;
+#events h3 {
+  margin-bottom: 16px; /* More space below the title */
+}
+
+#events .mb-4 {
+  margin-bottom: 16px; /* Ensures space between date/location and description */
 }
 
 #events .border-t {
-  border-top-width: 2px;
+  border-top-width: 1px;
 }
 
 #events .bg-gray-50 {
   background-color: #f7f7f7;
+}
+
+#events .grid {
+  gap: 24px; /* Ensures there's enough space between cards */
+}
+
+#events .rounded-lg {
+  border-radius: 16px; /* Slightly larger border-radius for a modern look */
 }
