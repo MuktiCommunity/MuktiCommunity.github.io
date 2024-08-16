@@ -1,9 +1,0 @@
-events:
-  - title: "Mukti Meetup"
-    date: "2024-09-15"
-    description: "Join us for an exciting meetup with FOSS enthusiasts!"
-    url: "/events/mukti-meetup"
-  - title: "FOSS Workshop"
-    date: "2024-10-05"
-    description: "A hands-on workshop on contributing to open-source projects."
-    url: "/events/foss-workshop"
