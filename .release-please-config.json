@@ -1,0 +1,10 @@
+{
+  "release-type": "ruby",
+  "packages": {
+    ".": {
+      "release-type": "ruby",
+      "package-name": "awesome-jekyll-theme",
+      "version-file": "lib/awesome-jekyll-theme/version.rb"
+    }
+  }
+}
