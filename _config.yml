@@ -1,6 +1,6 @@
-title: AwesomeJT
+title: Mukti Community
 logo: /assets/images/logo.avif
-baseurl: /awesome-jekyll-theme
+baseurl: /
 
 ##
 # Typewritter configuration.
@@ -25,7 +25,7 @@ collections:
 contact_channels_section: true
 contact_channels:
   # email: "example@example.cl"
-  github: "https://github.com/a-chacon"
+  github: "https://github.com/MuktiCommunity"
   # telegram: "https://t.me/"
   # stackoverflow: "https://stackoverflow.com"
   # discord: "https://discord.com/"
