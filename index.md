@@ -8,9 +8,9 @@ main_content: >
   # Mukti : स्वतंत्रता सर्वदा.
 
 
-    Welcome to Mukti, a thriving community with **over 650 members and a strong presence across India**! We are passionate about empowering students by equipping them with engineering and other 
-    essential skills that go beyond the traditional curriculum. At Mukti, students collaborate on impactful FOSS projects and participate in workshops at national and international forums, 
-    shaping the future of technology together. Join us in our mission to innovate, learn, and inspire! **Let's create, learn, and inspire together!**
+    Welcome to Mukti, where over 650 members across India are coming together to learn, create, and grow! We’re all about empowering students with the skills that go beyond what’s taught in class.
+    Whether you’re into building cool FOSS projects or want to dive into workshops at national and international forums, Mukti is the place to be. We’re here to innovate, learn,
+    and inspire—so come join us on this exciting journey, and let’s shape the future of technology together!
 footer: true
 permalink: /
 ---
