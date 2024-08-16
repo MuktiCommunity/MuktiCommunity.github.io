@@ -1,6 +1,4 @@
 <div class="rounded-lg hover:bg-gray-50 p-8 shadow-lg transition-transform transform hover:scale-105">
-  <a href="{{include.event.url | relative_url}}">
-    <img src="{{include.event.image | relative_url}}" alt="Event Image" class="object-cover w-full h-60 rounded-t-lg" />
     <p class="font-mulish text-gray-500 mt-6 mb-2">{{include.event.date}} • {{include.event.location}}</p>
     <h2 class="text-2xl hover:underline font-bold my-2 text-gray-800">{{include.event.title}}</h2>
     <div class="font-mulish text-gray-700">
@@ -11,5 +9,4 @@
       <category class="font-mulish text-sm text-gray-500">#{{ tag | xml_escape }}</category>
       {% endfor %}
     </div>
-  </a>
 </div>
