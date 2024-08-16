@@ -6,7 +6,7 @@ image : https://i.pinimg.com/originals/aa/e6/21/aae621d97bdea36d00aad9db5837b598
 ---
 ![Untitled_design_1_-removebg](https://github.com/user-attachments/assets/1c585e3b-d8a1-4835-a84a-dd787a16b56e)
 
-Mukti has had the privilege of collaborating with some of the most esteemed organizations in the FOSS community, including **IIT Bombay’s Trust Lab, Foss United, and DeepRoot Linux**.
+Mukti has had the privilege of collaborating with some of the most esteemed organizations in the FOSS community, including **[IIT Bombay’s Trust Lab](https://trustlab.iitb.ac.in/), [Foss United](https://fossunited.org/), and [DeepRoot Linux](https://deeproot.in/)**.
 
 
 <img src="https://github.com/user-attachments/assets/3a56f43c-d281-4788-b84c-011782a95b7d" width="400">
