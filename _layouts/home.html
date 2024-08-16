@@ -25,6 +25,48 @@ layout: default
   </div>
 </section>
 
+{% if site.events.size > 0 %}
+<section
+  id="events"
+  class="container mx-auto flex flex-col items-center justify-center min-h-screen"
+>
+  <div class="py-16">
+    <h2 class="text-3xl font-bold text-center md:text-left">
+      Upcoming Events
+    </h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16"
+    >
+      {% for event in site.events limit:3 %}
+      <div class="bg-white rounded-lg shadow-lg p-6">
+        <h3 class="text-xl font-semibold">{{ event.title }}</h3>
+        <p class="mt-2 text-gray-600">{{ event.date }}</p>
+        <p class="mt-2">{{ event.description }}</p>
+        <a
+          class="mt-4 inline-block text-blue-500 hover:underline"
+          href="{{ event.url | relative_url }}"
+        >
+          Learn More
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% assign events_page = site.pages | where: 'layout', 'events' | first %} {% if
+    events_page %}
+    <div class="pt-4 text-center">
+      <a
+        class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold"
+        href="{{ events_page.url | relative_url }}"
+      >
+        See More Events
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</section>
+{% endif %}
+
 {% if site.posts.size > 0 %}
 <section
   id="blog"
