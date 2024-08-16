@@ -12,6 +12,8 @@ a.gentle-clicked {
 
 #events {
   background: #f9f9f9;
+  margin: auto;
+  padding: auto;
 }
 
 #events .bg-white {
