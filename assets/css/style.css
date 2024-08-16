@@ -2,16 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes gentle-bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-3px); /* Slight upward movement */
-  }
-  100% {
-    transform: translateY(0); /* Return to original position */
-  }
+body {
+  color: #fcf0e4;
 }
 
 a.gentle-clicked {
