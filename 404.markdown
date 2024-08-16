@@ -2,9 +2,28 @@
 permalink: /404.html
 layout: 404
 ---
-# 404
+# Oops! 404 - Page Not Found
 
-**Page not found :(**
+## Looks like we've lost our way!
 
-The requested page could not be found.
+We’re passionate about Free and Open-Source Software, but even we can’t find this page! It seems like the page you’re looking for has taken a detour to explore new horizons. 😅
 
+But don’t worry, freedom is always within reach. Here's what you can do:
+
+- **[Return to Home](/)**
+- **[Explore our Projects](/projects.html)**
+- **[Blog](/blog.html)**
+
+In the spirit of **"स्वतंत्रता सर्वदा"** (Swatantrata Sarvada - Freedom Always), we believe in exploring new paths. Sometimes that means our pages get a little adventurous too!
+
+If you need help finding your way, drop us a line, and we’ll get you back on track. After all, freedom is just a click away!
+
+![Lost in Space]([https://example.com/lost-in-space.jpg](https://www.firstcomicsnews.com/wp-content/uploads/2016/09/Lost-in-Space-logo.png)) <!-- Replace with an appropriate image URL -->
+
+> "The only limit to our realization of tomorrow is our doubts of today." – Franklin D. Roosevelt
+
+Remember, even in the wilds of the internet, freedom and adventure await!
+
+Happy Exploring!
+
+Mukti Team
