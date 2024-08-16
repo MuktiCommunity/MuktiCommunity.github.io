@@ -3,9 +3,33 @@
 @tailwind utilities;
 
 body {
-  color: #fdf1e1;
+  background-color: #fdf1e1;
 }
 
 a.gentle-clicked {
   animation: gentle-bounce 0.3s ease-out; /* Shorter, smoother animation */
+}
+
+#events {
+  background: #f9f9f9;
+}
+
+#events .bg-white {
+  background: #ffffff;
+}
+
+#events .max-w-sm:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#events h2 {
+  color: #333333;
+}
+
+#events .border-t {
+  border-top-width: 2px;
+}
+
+#events .bg-gray-50 {
+  background-color: #f7f7f7;
 }
