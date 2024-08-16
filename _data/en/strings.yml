@@ -1,12 +1,12 @@
 home:
-  contact_me: "You can contact me for any of this channels:"
-  blog_title: "Blog: Last Posts"
+  contact_me: "You can contact us on any of these channels:"
+  blog_title: "Blog: Last Posts 🛞"
   see_more_posts: "See More Posts ->"
-  projects_title: "Last Projects"
+  projects_title: "Last Projects 🛞"
   see_more_projects: "See More Projects ->"
 footer:
   title: "Let's keep in touch!"
-  description: " Find me on any of these platforms. "
+  description: " Find us on any of these platforms. "
   pages: Pages
 blog:
   read_more: "Read More ->"
