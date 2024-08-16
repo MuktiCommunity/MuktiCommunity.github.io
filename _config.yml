@@ -24,9 +24,9 @@ collections:
 ##
 contact_channels_section: true
 contact_channels:
-  # email: "example@example.cl"
+  email: mukticommunity@proton.me
   github: "https://github.com/MuktiCommunity"
-  # telegram: "https://t.me/"
+  telegram: https://t.me/+wFGdHiypdQhkZWU9
   # stackoverflow: "https://stackoverflow.com"
   # discord: "https://discord.com/"
   # mastodon: "https://lile.cl/"
