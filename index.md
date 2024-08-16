@@ -6,9 +6,9 @@ description: >-
 image: /assets/images/Main.png
 main_content: >
   # Mukti : स्वतंत्रता सर्वदा.
-
-    _Mukti : Svatantrata Sarvada (/sʋəˈt̪ɾəˌt̪aː//ˈsərʋəˌdaː/)_
-    Freedom always
+  
+    _Mukti : Svatantrata Sarvada (Freedom Always)_
+    _ pronounced: (/sʋəˈt̪ɾəˌt̪aː//ˈsərʋəˌdaː/)_
     Welcome to Mukti, where over 650 members across India are coming together to learn, create, and grow! We’re all about empowering students with the skills that go beyond what’s taught in class.
     Whether you’re into building cool FOSS projects or want to dive into workshops at national and international forums, Mukti is the place to be. We’re here to innovate, learn,
     and inspire—so come join us on this exciting journey, and let’s shape the future of technology together!
