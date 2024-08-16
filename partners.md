@@ -5,12 +5,4 @@ nav: true
 description: These are the amazing projects our community members have made!
 ---
 
-
-<br>
-<br>
-
-# Our Partners
-
-
-<br>
-<br>
+Hello this is a description of our Partners
