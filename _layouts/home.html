@@ -38,25 +38,12 @@ layout: default
     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 w-full"
   >
     {% for event in site.data.events %}
-    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-      <div class="p-8"> <!-- Adjusted padding for better spacing -->
-        <h3 class="font-bold text-2xl text-gray-900 mb-4">{{ event.title }}</h3> <!-- Increased margin bottom -->
-        <p class="text-gray-600 text-sm mb-4">
-          {{ event.date }} • {{ event.location }}
-        </p>
-        <p class="text-gray-700 text-base">
-          {{ event.description }}
-        </p>
-      </div>
-      <div class="px-6 py-4 border-t border-gray-200 bg-gray-50">
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#FOSS</span>
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Community</span>
-      </div>
-    </div>
+    {% include event_card.html event=event %}
     {% endfor %}
   </div>
 </section>
 {% endif %}
+
 
 
 {% if site.posts.size > 0 %}
