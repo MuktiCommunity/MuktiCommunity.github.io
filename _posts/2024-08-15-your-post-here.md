@@ -12,6 +12,8 @@ I'm Het Joshi, the founder of Mukti, and I’m thrilled to welcome you all to th
 Mukti was born out of a simple idea: to create a space where students like us could dive deep into the world of Free and Open Source 
 Software (FOSS) and explore the vast landscape of cybersecurity, artificial intelligence, networks, and much more.
 
+Today on the 78th Independence Day of India, It's my honor to release our official Mukti website. I would also take this oppurtunity to talk about my vision with which I founded Mukti and lead its operations.
+
 When I founded Mukti, I had a vision of building a community that isn’t confined to the walls of a classroom or limited by a curriculum.
 I wanted to provide a platform where students could work on real-world projects, share knowledge, and develop skills that go 
 beyond textbooks. Mukti is that platform.
