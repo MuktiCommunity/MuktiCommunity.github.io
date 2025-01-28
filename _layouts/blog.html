@@ -18,10 +18,7 @@ layout: default
     </a>
     {% endfor %}
   </div>
-  {% endif %} {% assign posts = page.posts | default: site.posts %} {% assign
-  first_post = posts[0] %} {% include post_main.html post=first_post %} {%
-  assign rest_posts = posts | slice: 1, posts.size %} {% if rest_posts.size > 0
-  %}
+  {% endif %} {% assign posts = page.posts | default: site.posts %} {% assign rest_posts = posts %}
 
   <hr class="h-px my-12 bg-gray-400 border-0 dark:bg-gray-700" />
 
@@ -30,10 +27,12 @@ layout: default
     site.data['en'].strings.blog.more_articles }}
   </h1>
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16"
+  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-12 gap-y-16 py-8 md:py-16"
   >
-    {% for post in rest_posts %} {% include post_card.html post=post %} {%
-    endfor %}
+  {% for post in posts %}
+    {% include post_card.html post=post %}
+  {% endfor %}
   </div>
+
   {% endif%}
 </section>
