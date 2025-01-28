@@ -39,7 +39,7 @@ You can add executable files on your RPi Pico using a micro USB cable, computer 
 - Go to https://thonny.org and install thonny for your operating system.
 - The following code toggles the LED present on the RPi ON/OFF at regular intervals. Copy the code and paste in Thonny.
 
-```Python
+```python
 from machine import Pin
 import utime
 # Define the onboard LED pin
