@@ -5,7 +5,7 @@ category: event_report
 author: san
 comments: true
 ---
-# Raspberry Pi Pico( Introduction)	
+# Raspberry Pi Pico (Introduction)	
 	
 	This is an introductory session on Raspberry Pi Pico.
 ## What is Raspberry Pi Pico( RPi Pico)
