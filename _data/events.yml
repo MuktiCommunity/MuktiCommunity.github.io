@@ -1,9 +1,9 @@
 # _data/events.yml
 
-- title: "FOSSMeet"
+- title: "FOSSMeet 2025 (not a Mukti Event)"
   date: "14th to 16th March 2025"
   location: "NIT Calicut"
-  description: " FOSSMeet, India’s longest-running free and open source software conference, aims to discuss and impart valuable insights, trends and ongoing happenings in the world of open-source. "
+  description: " FOSSMeet, India’s longest-running free and open source software conference conducted by FOSSCell at NITC, aims to discuss and impart valuable insights, trends and ongoing happenings in the world of open-source. "
 
 - title: "Linux Install-A-Thon"
   date: "February End"
