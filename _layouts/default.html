@@ -28,8 +28,11 @@
         new TypeIt("h1", {}).go();
       });
     </script>
-    {% endif %} {% include navbar.html %} {{ content }} {% include footer.html
+    {% endif %} {% include navbar.html %}
+    <br>
+    {{ content }} {% include footer.html
     %}
+    
     <script>
       document.querySelectorAll("a").forEach(function (link) {
         link.addEventListener("click", function (event) {
