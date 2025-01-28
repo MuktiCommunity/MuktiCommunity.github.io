@@ -1,0 +1,105 @@
+---
+layout: post
+title: satark 2.5
+category: event_report
+author: san
+comments: "true"
+---
+# welcome 
+Satark 2.5 was an introductory session on cybersecurity best practices.
+if you want to think of a domain where cybersecurity isn't involved, well you can't as cybersecurity is used in every aspect for protecting data, processes or connections. cybersecurity is crucial for any domain of computer science.
+## an overview of cybersecurity
+- importance of cybersecurity: cybersecurity is critical for protecting data, infrastructure, finances etc.
+- overview of cyber threats: brief overview of common cyber threats like phishing, malware, DDoS, etc. (more about this later, in the session)
+- best practices: like strong password, software updates, backups, etc. to stay secure.
+cybersecurity requires you have strong knowledge about the domain you are working on, along with knowing how to operate the command line, etc…
+## history of cybersecurity
+```mermaid
+graph TD
+A[history of cyber security] --> B[1970's :- first computer viruses emerged]
+B --> c[1988:- Morris worm infects over 6000 computers connected to the internet.]
+c --> d[1990:- world goes online.]
+d --> e[2004:- first international cybersecurity strategy published.]
+```
+## some quotes
+in his book published in 1997, Gene Spafford mentioned the famous quote: "The only truly secure system is one that is powered off, cast in a block of concrete and sealed in a lead-lined room with armed guards - and even then I have my doubts."
+try guessing the vulnerability here.
+yep, it's the armed guards. people are the biggest vulnerability in any system.
+## types of cyber threats
+- malware: malicious programs aimed to damage, disrupt or gain unauthorized access to system or data. examples: viruses, trojans, spyware, etc...
+- phishing: anything which attempts to steal your sensitive data is called phishing. examples: fake login pages
+- DoS(Denial of Service) or DDoS(Distributed Denial of Service): attacks to make system or service unavailable by attempting to flood them up with traffic.
+- data breaches: incidents exposing confidential data from unauthorized access or disclosure. example: sites like wiki leaks (mentioned only for educational purposes).
+## top cybersecurity companies
+to protect your-self from various cyber threats there are a huge number of cybersecurity companies which provide protection and scanning features. popular companies are symantec, kaspersky, cisco, juniper networks, etc...
+### the cybersecurity process
+- identify assets: catalog all critical IT assets and data that need protection.
+- assess risks: analyze threats, vulnerabilities and impacts to determine risk levels.
+- develop policies: create information security policies aligned to business objectives.
+- implement controls: deploy technical, administrative, and physical controls to mitigate risks.
+- test and monitor: continuously test defenses and monitor networks for anomalies.
+- respond and recover: detect breaches rapidly and execute incident response plan.
+## cybersecurity best practices
+- use of strong passwords: create long and complex password which are difficult to guess. use password managers to generate and store unique passwords. 
+fun fact: ["Tr0ub4dor&3" is weaker then "correcthorsebatterystaple"](https://missing.csail.mit.edu/2020/security/#entropy).
+- enable multi-factor authentication: require an additional step like a code sent to your phone while logging in to add extra security.
+- keep software updated: install the latest security patches and updates to protect against unknown vulnerabilities.
+- use anti-virus and anti-malware tools: as mentioned in the previously.
+- backup data regularly: keep current backups of important data to recover from data corruption or loss.
+## comparing cybersecurity solutions
+the following are percentage of organizations using each solution according to 2019 survey:
+![[/assets/images/cyberStatsan.png]]
+## the GOOD part?
+### nmaps and ip
+`nmap` is used to map a network. 
+to check your local IP address, you can use the command `ip a`.
+to install `nmap`, you can use 
+`brew install nmap` if you are using homebrew as your package manager or
+`sudo apt install nmap` if you want to use`apt`.
+
+running `ip a` will give you a result similar to the following:
+![[/assets/images/ipaSan.png]]
+
+and running `nmap` let's say on your college website will give you a result like: 
+![[/assets/images/nmapCollegeSitesan.png]]
+
+you can see that you don't need to specify a IP always, the domain name of a website will help the system fetch it for you. 
+you can see which of the ports are open. if the IP is public you can try and `ssh` into the system.
+if you see any error saying that the ports are blocked, you can try using flags in your prompts.
+`-Pn`: scans all ports
+there is also the prompt `-sP` which detects for vulnerable ports
+`-sP`: detects vulnerable ports
+### burp suite
+[burp suite](https://portswigger.net/burp/releases/professional-community-2024-9-3?requestededition=community&requestedplatform=) is web security testing app. this allows you to test websites in a inbuilt browser, for example: web application penetration testing. it also allows you to manipulate the request going from your end or while receiving from your end.
+for example: if you open a temporary project --> proxy --> open browser --> "intercept on" and open [google](https://google.com) you will get something like this-
+![[/assets/images/burpsuitDemosan.png]]
+if you click on the forward button, the requests will get cleared. [google](https://google.com) has a lot of forward requests as the there are a lot of trackers. you can also see that that it is calling play.google.com which is not required but this is also google we are talking about. 
+this will also help you find out is a website is talking to a third party or not.
+### hydra
+[hydra](https://www.kali.org/tools/hydra/) is popular password cracking tool which uses brute force method to crack passwords.
+### metasploit
+there are frameworks/VM which have built-in vulnerabilities for one to explore.
+check out [metasploit](https://www.metasploit.com/) and [metasploitable3](https://github.com/rapid7/metasploitable3).
+### hashcat
+[hashcat](https://github.com/hashcat/hashcat) is a password recovery tool. or is it? :)
+### tcptraceroute
+[tcp trace route](https://linux.die.net/man/1/tcptraceroute) shows the route of package taken to reach the server. one use case if that if one of the route is found to be unrelated for a package you can suspect that something is up.
+### ip-sweeper
+ip sweeper tells you how many machines are connected to the same sub-net as you.
+## exploiting security vulnerabilities using hardware
+exploiting vulnerabilities requires you to know different programming languages because you know what the software you are "testing for" is written in, so having a brief understanding of different programming languages is a must for cybersecurity experts.
+### R-Pi Pico
+[Raspberry Pi Pico](https://www.raspberrypi.com/products/raspberry-pi-pico/) is a tiny microcontroller. this tiny tool as be exploited by writing a malicious code and connecting it to a victims computer. one way is to make it look like a keyboard that is, when the victims computer connects to it, it will treat it as a keyboard and opens a browser and types a malicious link or runs a harmful script.
+for more about R-Pi Pico, check out [Mukti's R-Pi Pico session documentation](https://chrompycoder.github.io/mukti/tantrayantra.html).
+### the direct approach
+[wifi-direct](https://www.wi-fi.org/discover-wi-fi/wi-fi-direct) technology allows you to create your own wifi-network for for sharing files, printing, sync etc... this technology is usually used in printers, fridges, etc. which can easily exploited and used for DDoS attacks or monitoring which is much more harmful moreover it uses WPA2 technology which is now replaced with WPA3.
+### hostapd 
+hostapd allows you to act like network access point and monitor traffic. for example, you setup a wifi network called "free-wifi" from you computer which provides internet to those who connect to it while monitoring all of their internet traffic.
+### honeypot
+a honeypot is purposeful vulnerability/ties which is has been setup to bait hackers. a popular way is to make a global website using [ngrok](https://ngrok.com)/[zrok](https://zrok.io) which will host your local machine application and provide you with a public IP address for it, and add vulnerabilities to your website and a honeypot.
+
+### doubts: 
+for any doubts, bugs or errors, contact Mukti Core from our [telegram group](https://t.me/+wFGdHiypdQhkZWU9) or drop a text on the _Tech-help_ section on our [telegram group](https://t.me/+wFGdHiypdQhkZWU9).
+### credits : @san, Mukti Core
+
+[edit this page]()
