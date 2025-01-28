@@ -2,6 +2,7 @@
 layout: post
 title: Raspberry Pi Pico (Introduction)
 category: event_report
+image: https://github.com/user-attachments/assets/d7459eac-067a-4a24-91a3-14ba892ac11a
 author: san
 comments: true
 ---
