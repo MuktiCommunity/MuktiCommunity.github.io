@@ -1,56 +1,66 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
 name: Deploy Jekyll site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-x64  # Ensure this matches your self-hosted runner
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v3
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@55283cc23133118229fd3f97f9336ee23a179fcf # v1.146.0
-        with:
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
+
+      - name: Ensure Ruby is Installed (For Self-Hosted Runners)
+        run: |
+          RUBY_VERSION=3.2.2
+          INSTALL_DIR=/opt/hostedtoolcache/Ruby/$RUBY_VERSION/x64
+          COMPLETE_FILE="$INSTALL_DIR.complete"
+
+          if [ ! -f "$COMPLETE_FILE" ]; then
+            echo "Installing Ruby $RUBY_VERSION..."
+            mkdir -p $INSTALL_DIR
+            ruby-build $RUBY_VERSION $INSTALL_DIR
+            touch $COMPLETE_FILE
+          else
+            echo "Ruby $RUBY_VERSION is already installed."
+          fi
+
+      - name: Setup Ruby Environment
+        run: |
+          RUBY_VERSION=3.2.2
+          INSTALL_DIR=/opt/hostedtoolcache/Ruby/$RUBY_VERSION/x64
+          echo "Adding Ruby to PATH"
+          echo "$INSTALL_DIR/bin" >> $GITHUB_PATH
+          ruby -v
+
+      - name: Setup Bundler
+        run: |
+          gem install bundler
+          bundle install
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
+
       - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
-      - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
+
+      - name: Upload Artifact
         uses: actions/upload-pages-artifact@v2
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
