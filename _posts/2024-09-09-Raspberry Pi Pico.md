@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Raspberry Pi Pico( Introduction)
+title: Raspberry Pi Pico (Introduction)
 category: event_report
 author: san
 comments: true
