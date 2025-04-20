@@ -1,0 +1,51 @@
+/*body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+*/
+.ball {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    transition: transform 0.1s ease-out, opacity 0.3s ease-out;
+    z-index: 1000;
+}
+
+/* Pulse animation for the ball */
+@keyframes pulse {
+    0% { transform: scale(1) translateY(var(--y-pos)); }
+    50% { transform: scale(1.3) translateY(var(--y-pos)); }
+    100% { transform: scale(1) translateY(var(--y-pos)); }
+}
+
+.ball.pulse {
+    animation: pulse 0.8s ease-in-out infinite;
+    --y-pos: 0px; /* Will be set via JavaScript */
+}
+
+#particles-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;  /* Cover the whole screen */
+    height: 100%; /* Cover the whole screen */
+    pointer-events: none;
+    z-index: 999;
+}
+
+.particle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: orange;
+    border-radius: 50%;
+    opacity: 1;
+    /* Transition will be set in JavaScript for slower animation */
+}
