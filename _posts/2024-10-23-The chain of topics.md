@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post_with_ball_animation
 title: The Learning conondrum
 category: learning_exp
 image: https://github.com/user-attachments/assets/b8490eb1-1170-4840-966e-7a8ff5afe586
