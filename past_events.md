@@ -33,7 +33,7 @@ ready to collaborate on projects without fear of messing up—because, in Git, m
 
 
 
-### Satark – Cybersecurity with a Side of Hands-On Demos
+### Satark 2.5 – Cybersecurity with a Side of Hands-On Demos
 
 ![image](https://github.com/user-attachments/assets/23f1107b-d418-4b47-aae8-02fefea5e608)
 

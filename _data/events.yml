@@ -1,16 +1,22 @@
 # _data/events.yml
 
-- title: "FOSSMeet 2025 (not a Mukti Event)"
-  date: "14th to 16th March 2025"
-  location: "NIT Calicut"
-  description: " FOSSMeet, India’s longest-running free and open source software conference conducted by FOSSCell at NITC, aims to discuss and impart valuable insights, trends and ongoing happenings in the world of open-source. "
+- title: "INDIA FOSS 2025 (not a Mukti Event)"
+  date: "19 - 21 September 2025"
+  location: "Bangalore"
+  description: " The 5th edition of the Free and Open Source Software conference by the FOSS United community."
 
-- title: "Linux Install-A-Thon"
-  date: "February End"
+- title: "FOSS IRL"
+  date: "Mid September"
   location: "MSRIT, Bangalore"
-  description: "An event where students can learn how to navigate their way through linux cli and install it on their system!"
+  description: " Introduction to Mukti!"
 
-- title: "Writing better and secure Code"
-  date: "March"
+- title: "Galti Se Mistake - Git it"
+  date: "Late September"
   location: "MSRIT, Bangalore"
-  description: "An effort to show how code can be written in a well maintained, organised and a secure way through easy to follow hands-on-session"
+  description: " Introduction to Git and Version Control. Installing Git and hands on event to explain how collaboration works with Git."
+
+- title: "End of 10 : Switch to Linux"
+  date: "Mid October"
+  location: "MSRIT, Bangalore"
+  description: " Linux Installation Party"
+  
