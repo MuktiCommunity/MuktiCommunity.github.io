@@ -6,6 +6,7 @@ tags: ['CLI','RPG','Java','open source']
 image: /assets/images/batscram_pic.jpg
 ---
 # Mahabharata CLI RPG
+Check it out [here](https://github.com/Praneel7015/simple-java-cli-rpg)
 
 A lightweight, single-file Java console RPG inspired by the epic Mahabharata. You travel abstract zones, battle spirits and shades of past warriors, gain power, and ultimately confront the Vengeful Spirit of Duryodhana.
 
