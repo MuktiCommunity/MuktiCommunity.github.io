@@ -1,7 +1,7 @@
 ---
 layout: project
-title: CLI-RPG
-category: CLI
+title: Java CLI-RPG
+category: Java
 tags: ['CLI','RPG','Java','open source']
 image: /assets/images/batscram_pic.jpg
 ---
@@ -67,5 +67,15 @@ Delete `savegame.dat` manually if you want to force a new run.
 
 Check it out [here](https://github.com/Praneel7015/simple-java-cli-rpg)
 
-Thanks For Reading!
+## Contribution
+Want to contribute? Create a [Pull request](https://github.com/Colluded-Projects/Cloak-of-lupin/pulls). 
+Here are some of the ways in which you can contribute:
+- Create a better UI.
+- Create a AppImage of this application and release it. 
+- Create a .exe for the application
+- Create a browser extension for the application
 
+## Contact
+Want to request a feature or report a issue personally? Feel free to contact [Mukti on telegram.](https://t.me/+JYx6akEWSik2Yjc1)
+
+Thanks For Reading!
