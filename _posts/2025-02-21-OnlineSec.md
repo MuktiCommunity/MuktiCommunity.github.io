@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Securing Yourself Online
-category: cyber_security
+category: cyber security
 image: https://github.com/user-attachments/assets/5d6a4bea-2ff9-4a25-9829-53ae791c4508
 author: Praneel
 comments: true
@@ -41,4 +41,5 @@ Therefore I recommend switching away from Chrome, and using browsers that give m
 ### Bonus
 I cannot stop without talking about [fmhy.net](https://fmhy.net/) A Great Place for Free Resources Which is Trusted By The Community of Millions of People and Updated on a Daily Basis.
 
-Thanks for reading!
+Thanks for reading!<br>
+@[Praneel](https://www.praneel.tech)
