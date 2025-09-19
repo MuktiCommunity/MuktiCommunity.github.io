@@ -2,7 +2,7 @@
 layout: post
 title: Securing Yourself Online
 category: cyber_security
-image:
+image: https://github.com/user-attachments/assets/5d6a4bea-2ff9-4a25-9829-53ae791c4508
 author: Praneel
 comments: true
 ---
