@@ -68,7 +68,7 @@ Delete `savegame.dat` manually if you want to force a new run.
 Check it out [here](https://github.com/Praneel7015/simple-java-cli-rpg)
 
 ## Contribution
-Want to contribute? Create a [Pull request](https://github.com/Colluded-Projects/Cloak-of-lupin/pulls). 
+Want to contribute? Create a [Pull request](https://github.com/Praneel7015/simple-java-cli-rpg/pulls). 
 Here are some of the ways in which you can contribute:
 - Create a better UI.
 - Create a AppImage of this application and release it. 
