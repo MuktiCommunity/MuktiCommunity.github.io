@@ -3,7 +3,8 @@ layout: project
 title: Resist
 category: Hardware
 tags: ['in-progress', 'open source']
-image: /assets/images/batscram_pic.jpg
+image: https://github.com/user-attachments/assets/548b8598-66aa-472b-b894-11643d261f91
+
 ---
 
 # What is Resist
