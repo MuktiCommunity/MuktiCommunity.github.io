@@ -57,6 +57,8 @@ An alternative to this approach is to set up a dedicated transcoding and uploadi
 
 One of the annoying results of the implemented solution is having to manually clean out the original `.mp4` videos weekly, as they are no longer used. That problem could also be solved with this alternative.
 
+@[Absterrg0](https://github.com/Absterrg0)
+
 ---
 
 ## Conclusion
