@@ -7,6 +7,7 @@ image: /assets/images/batscram_pic.jpg
 ---
 
 # What is Resist
+Check it out [here!](https://github.com/Praneel7015/resist)
 Do you hate having to figure out the resistance of a resistor by using a multimeter or calculating it with a color chart?  
 
 Resist makes it simple. With just one photo of a resistor, you can instantly find out its resistance value. Do not want to use the camera? You can also upload an image from your device.
