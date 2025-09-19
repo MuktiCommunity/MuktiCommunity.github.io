@@ -2,7 +2,8 @@
 layout: post
 title: My n8n Automation Rabbit Hole
 category: [Automation, AI, learning exp]
-image: 
+image: https://github.com/user-attachments/assets/b25c1bf9-fee7-407e-954a-9ce9badb230a
+
 author: Praneel
 comments: true
 ---
