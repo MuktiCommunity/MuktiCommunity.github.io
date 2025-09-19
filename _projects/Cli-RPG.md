@@ -3,7 +3,8 @@ layout: project
 title: Java CLI-RPG
 category: Java
 tags: ['CLI','RPG','Java','open source']
-image: /assets/images/batscram_pic.jpg
+image: https://github.com/user-attachments/assets/b6cad51d-2efd-48b6-b264-508ccb0a40f5
+
 ---
 # Mahabharata CLI RPG
 Check it out [here](https://github.com/Praneel7015/simple-java-cli-rpg)
