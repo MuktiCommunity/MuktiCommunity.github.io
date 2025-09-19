@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to implement HLS chunking in Vercel
-image: <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/a9138816-9612-4301-acd2-c262093e98df" />
+image: https://github.com/user-attachments/assets/a9138816-9612-4301-acd2-c262093e98df
 
 categories: [Cloud, Media]
 author: Absterrg0
