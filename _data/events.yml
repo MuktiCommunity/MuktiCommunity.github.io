@@ -1,22 +1,17 @@
 # _data/events.yml
 
-- title: "INDIA FOSS 2025 (not a Mukti Event)"
-  date: "19 - 21 September 2025"
+- title: "Satark"
+  date: "Second week of April"
   location: "Bangalore"
-  description: " The 5th edition of the Free and Open Source Software conference by the FOSS United community."
+  description: "Mukti's annual introduction to cyber security event."
 
-- title: "FOSS IRL"
-  date: "Mid September"
+- title: "Shell Day"
+  date: "End of April"
   location: "MSRIT, Bangalore"
-  description: " Introduction to Mukti!"
+  description: " Introduction to shell and using CLI in daily life."
 
-- title: "Galti Se Mistake - Git it"
-  date: "Late September"
+- title: "AI and Capabilities"
+  date: "Early May"
   location: "MSRIT, Bangalore"
-  description: " Introduction to Git and Version Control. Installing Git and hands on event to explain how collaboration works with Git."
+  description: " How AI is used in coding at high levels and leveraging opensource AI's."
 
-- title: "End of 10 : Switch to Linux"
-  date: "Mid October"
-  location: "MSRIT, Bangalore"
-  description: " Linux Installation Party"
-  
