@@ -20,7 +20,7 @@ jobs:
           bundler-cache: true
 
       - name: Build Jekyll
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --baseurl ""
         env:
           JEKYLL_ENV: production
 
@@ -34,4 +34,4 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           local-dir: ./_site/
           server-dir: /
-          dangerous-clean-slate: true
+          dangerous-clean-slate: false

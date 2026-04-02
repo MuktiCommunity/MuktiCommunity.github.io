@@ -93,15 +93,18 @@ layout: default
       {% for project in site.projects limit:2 %} {% include project_card.html
       project=project%} {% endfor %}
     </div>
+    {% assign projects_page = site.pages | where: 'layout', 'projects' | first %}
+    {% if projects_page %}
     <div class="pt-4 text-center">
       <a
         class="font-mulish text-lg hover:text-sky-400 hover:underline font-bold"
-        href="{{'/projects' | relative_url }}"
+        href="{{ projects_page.url | relative_url }}"
       >
         {{ site.data[site.active_lang].strings.home.see_more_projects | default:
         site.data['en'].strings.home.see_more_projects }}
       </a>
     </div>
+    {% endif %}
   </div>
 </section>
 {% endif %} {% assign trimmed_content = content | strip | replace: "\n", "" |
