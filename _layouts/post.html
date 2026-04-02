@@ -6,7 +6,7 @@ layout: default
 <div class="container mx-auto">
   <div id="post" class="prose max-w-[75ch] prose-neutral mx-auto pb-10 pt-20 lg:pt-[90px] lg:pb-20">
     <div class="pb-4">
-      <a href="{{site.url}}/category/{{page.categories[0] | replace: ' ', '-' | downcase}}"
+      <a href="{{ '/category/' | append: page.categories[0] | replace: ' ', '-' | downcase | append: '/' | relative_url }}"
         class="no-underline font-mulish text-sm hover:text-sky-400 text-gray-500">
         {{ page.categories[0] | upcase }}
       </a>

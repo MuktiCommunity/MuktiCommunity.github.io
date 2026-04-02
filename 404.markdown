@@ -22,7 +22,7 @@ In the spirit of **"स्वतंत्रता सर्वदा"** (Swatan
 
 If you need help finding your way, drop us a line, and we’ll get you back on track. After all, freedom is just a click away!
 
-![Lost in Space]([https://example.com/lost-in-space.jpg](https://www.firstcomicsnews.com/wp-content/uploads/2016/09/Lost-in-Space-logo.png)) <!-- Replace with an appropriate image URL -->
+![Lost in Space](https://www.firstcomicsnews.com/wp-content/uploads/2016/09/Lost-in-Space-logo.png)
 
 > "The only limit to our realization of tomorrow is our doubts of today." – Franklin D. Roosevelt
 
