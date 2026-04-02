@@ -3,7 +3,7 @@ layout: project
 title: Vokecheck
 category: Automation
 tags: ['Automation', 'open source']
-image: <img width="615" height="811" alt="image" src="https://github.com/user-attachments/assets/817e6453-ad18-4e28-bb0d-aa524ee205f9" />
+image: https://github.com/user-attachments/assets/817e6453-ad18-4e28-bb0d-aa524ee205f9
 ---
 
 # What is Vokecheck?
