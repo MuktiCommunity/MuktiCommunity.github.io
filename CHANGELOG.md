@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0 (2026-04-03)
+
+
+### Bug Fixes
+
+* minor warnings , update: project resist. ([a74ab19](https://github.com/MuktiCommunity/MuktiCommunity.github.io/commit/a74ab191239872509fad8a7d17a1f7284c84ec1c))
+* projects page, add: project flowforge ([ae547c8](https://github.com/MuktiCommunity/MuktiCommunity.github.io/commit/ae547c8adbbf642ef3586e5cb2a5fa08fe9985a4))
+
 ## [1.0.0](https://github.com/a-chacon/awesome-jekyll-theme/compare/awesome-jekyll-theme/v0.3.1...awesome-jekyll-theme/v1.0.0) (2024-08-15)
 
 
