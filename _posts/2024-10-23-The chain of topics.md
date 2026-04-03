@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Learning conondrum
+date: 2024-10-23
 category: learning exp
 image: https://github.com/user-attachments/assets/b8490eb1-1170-4840-966e-7a8ff5afe586
 author: san

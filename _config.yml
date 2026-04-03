@@ -1,6 +1,8 @@
 title: The Mukti Community
 logo: /assets/images/logo.png
-baseurl: /
+url: https://mukticommunity.github.io
+baseurl: ""
+disqus_shortname: mukti-2
 
 ##
 # Typewritter configuration.

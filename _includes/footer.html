@@ -35,6 +35,24 @@
               {% endif%} {% endfor %}
             </ul>
           </div>
+          <div class="w-full lg:w-4/12 md:px-4 mt-6 lg:mt-0">
+            <span class="text-lg block text-gray-800 mb-2">
+              {{ site.data[site.active_lang].strings.footer.projects | default:
+              site.data['en'].strings.footer.projects}}
+            </span>
+            <ul>
+              {% assign footer_projects = site.projects | sort: 'title' %}
+              {% for project in footer_projects limit: 6 %}
+              <li>
+                <a
+                  class="font-mulish text-slate-600 hover:text-sky-400 dark:text-slate-300 dark:hover:text-slate-200"
+                  href="{{ project.url | relative_url }}"
+                  >{{ project.title }}</a
+                >
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
