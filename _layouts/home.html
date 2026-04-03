@@ -90,7 +90,8 @@ layout: default
       site.data['en'].strings.home.projects_title}}
     </h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 py-8 md:py-16">
-      {% for project in site.projects limit:2 %} {% include project_card.html
+      {% assign latest_projects = site.projects | sort: 'last_modified_at' | reverse %}
+      {% for project in latest_projects limit:2 %} {% include project_card.html
       project=project%} {% endfor %}
     </div>
     {% assign projects_page = site.pages | where: 'layout', 'projects' | first %}

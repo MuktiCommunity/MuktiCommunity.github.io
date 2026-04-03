@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'jekyll', '~> 4.3'
   spec.add_dependency 'jekyll-archives', '~> 2.2.1'
+  spec.add_dependency 'jekyll-last-modified-at', '~> 1.3'
   spec.add_dependency 'jekyll-polyglot', '~> 1.8'
   spec.add_dependency 'jekyll-seo-tag', '~> 2.8.0'
 
