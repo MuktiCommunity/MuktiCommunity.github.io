@@ -2,6 +2,7 @@
 layout: project
 title: Past Events
 nav: true
+hide_sharing: true
 ---
 
 ![image](https://github.com/user-attachments/assets/6132b2a1-07e1-4028-8db5-1c99ee12944a)
