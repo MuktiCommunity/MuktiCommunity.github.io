@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -29,9 +31,23 @@ jobs:
       - name: Lint GitHub Actions workflows
         uses: raven-actions/actionlint@v2
 
-      - name: Lint Markdown
-        uses: DavidAnson/markdownlint-cli2-action@v20
-        with:
-          globs: |
-            **/*.md
-            **/*.markdown
+      - name: Lint changed Markdown
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            base="${{ github.event.pull_request.base.sha }}"
+          else
+            base="${{ github.event.before }}"
+          fi
+
+          mapfile -t markdown_files < <(
+            git diff --name-only "$base" "$GITHUB_SHA" -- \
+              '*.md' '*.markdown'
+          )
+
+          if (( ${#markdown_files[@]} == 0 )); then
+            echo "No changed Markdown files to lint."
+            exit 0
+          fi
+
+          npx --yes markdownlint-cli2 "${markdown_files[@]}"
