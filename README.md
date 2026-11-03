@@ -97,6 +97,10 @@ To showcase a new project:
 
 We welcome contributions! Feel free to submit issues, pull requests, or suggestions to improve the website.
 
+Pull requests are checked by the lint workflow, which validates the Jekyll build,
+GitHub Actions workflows, and Markdown files. Dependabot checks Bundler and
+GitHub Actions dependencies weekly and opens update pull requests automatically.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](https://opensource.org/licenses/MIT) file for details.
