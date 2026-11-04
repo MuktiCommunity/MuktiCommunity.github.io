@@ -64,11 +64,15 @@ Through every event, Mukti has remained a place where students come to explore, 
 
 Our past events, technical sessions, and hands-on workshops have been organized, mentored, and led by our seniors and active core members:
 
+### Founder
+
+- Het Joshi
+
 ### Senior Members & Mentors
 
 - Sanjay J
 - Praneel S
-- Nikhil Yelahanka Naveen
+- Nikhil Y N
 - Utkarsh Patel
 
 ### Active Core Team & Coordinators
