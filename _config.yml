@@ -19,19 +19,16 @@ collections:
 
 ##
 # Contact Channels configuration
-# Uncomment for enable. Available contact channels are email, github, telegram, stackoverflow, discord, mastodon.
-# Please fell free to send a PR if you need a new one.
-# DISABLE GITHUB setting it as an empty string: ""
-# if false, then no contact channels will be display.
 ##
 contact_channels_section: true
 contact_channels:
   email: mukti.community@gmail.com
   github: "https://github.com/MuktiCommunity"
-  telegram: https://t.me/+wFGdHiypdQhkZWU9
-  # stackoverflow: "https://stackoverflow.com"
-  # discord: "https://discord.com/"
-  # mastodon: "https://lile.cl/"
+  linkedin: "https://www.linkedin.com/company/mukticommunity/"
+  discord: "https://discord.gg/8DAd4Ykz"
+  telegram: "https://t.me/MuktiCommunity"
+  instagram: "https://www.instagram.com/mukti_community"
+  whatsapp: "https://chat.whatsapp.com/Efg270PnXlQL7oEZL0m1S9"
 
 ##
 # Plugins configuration
@@ -59,3 +56,14 @@ jekyll-archives:
   layout: blog
   permalinks:
     category: "/category/:name/"
+
+##
+# Exclude list
+##
+exclude:
+  - vendor
+  - .bundle
+  - .jekyll-cache
+  - Gemfile
+  - Gemfile.lock
+  - README.md

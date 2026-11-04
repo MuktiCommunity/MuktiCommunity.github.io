@@ -1,6 +1,12 @@
 <div class="rounded-lg hover:bg-gray-50 p-8 shadow-lg transition-transform transform hover:scale-105">
     <p class="font-mulish text-gray-500 mt-6 mb-2">{{include.event.date}} • {{include.event.location}}</p>
+    {% if include.event.link %}
+    <h2 class="text-2xl hover:underline font-bold my-2 text-gray-800">
+      <a href="{{include.event.link}}" target="_blank">{{include.event.title}}</a>
+    </h2>
+    {% else %}
     <h2 class="text-2xl hover:underline font-bold my-2 text-gray-800">{{include.event.title}}</h2>
+    {% endif %}
     <div class="font-mulish text-gray-700">
       {{include.event.description}}
     </div>

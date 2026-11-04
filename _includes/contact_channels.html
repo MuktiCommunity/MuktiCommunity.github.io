@@ -23,28 +23,16 @@
       alt="Github Icon"
     />
   </a>
-  {% endif %} {% if contact_channels.telegram %}
+  {% endif %} {% if contact_channels.linkedin and contact_channels.linkedin != ""%}
   <a
     class="transition hover:scale-110 duration-300"
-    href="{{ contact_channels.telegram }}"
+    href="{{ contact_channels.linkedin }}"
     target="_blank"
   >
     <img
       class="h-6 w-6"
-      src="{{'/assets/images/contact_channels/telegram.svg' | relative_url }}"
-      alt="Telegram Icon"
-    />
-  </a>
-  {% endif %} {% if contact_channels.stackoverflow %}
-  <a
-    class="transition hover:scale-110 duration-300"
-    href="{{ contact_channels.stackoverflow }}"
-    target="_blank"
-  >
-    <img
-      class="h-6 w-6"
-      src="{{'/assets/images/contact_channels/stack-overflow.svg' | relative_url }}"
-      alt="StackOverflow Icon"
+      src="{{'/assets/images/contact_channels/linkedin.svg' | relative_url }}"
+      alt="Linkedin Icon"
     />
   </a>
   {% endif %} {% if contact_channels.discord %}
@@ -59,17 +47,40 @@
       alt="Discord Icon"
     />
   </a>
-  {% endif %} {% if contact_channels.mastodon %}
+  {% endif %} {% if contact_channels.telegram %}
   <a
     class="transition hover:scale-110 duration-300"
-    rel="me"
-    href="{{ contact_channels.mastodon }}"
+    href="{{ contact_channels.telegram }}"
     target="_blank"
   >
     <img
       class="h-6 w-6"
-      src="{{'/assets/images/contact_channels/mastodon.svg' | relative_url }}"
-      alt="Mastodon Icon"
+      src="{{'/assets/images/contact_channels/telegram.svg' | relative_url }}"
+      alt="Telegram Icon"
+    />
+  </a>
+  {% endif %} {% if contact_channels.instagram %}
+  <a
+    class="transition hover:scale-110 duration-300"
+    href="{{ contact_channels.instagram }}"
+    target="_blank"
+  >
+    <img
+      class="h-6 w-6"
+      src="{{'/assets/images/contact_channels/instagram.svg' | relative_url }}"
+      alt="Instagram Icon"
+    />
+  </a>
+  {% endif %} {% if contact_channels.whatsapp %}
+  <a
+    class="transition hover:scale-110 duration-300"
+    href="{{ contact_channels.whatsapp }}"
+    target="_blank"
+  >
+    <img
+      class="h-6 w-6"
+      src="{{'/assets/images/contact_channels/whatsapp.svg' | relative_url }}"
+      alt="WhatsApp Icon"
     />
   </a>
   {% endif %}
