@@ -60,6 +60,23 @@ But wait, there’s more! Mukti’s calendar is always packed with awesome event
 
 Through every event, Mukti has remained a place where students come to explore, learn, and have fun with technology. From hardware tinkering to code cracking, we create opportunities for hands-on experiences, collaboration, and innovation. And as we continue to grow, one thing remains certain—Mukti is all about learning, evolving, and having a blast while doing it!
 
+## Our Team & Event Mentors
+
+Our past events, technical sessions, and hands-on workshops have been organized, mentored, and led by our seniors and active core members:
+
+### Senior Members & Mentors
+
+- Sanjay J
+- Praneel S
+- Nikhil Yelahanka Naveen
+- Utkarsh Patel
+
+### Active Core Team & Coordinators
+
+- Vijay Bharath TMS
+- Mohammed Mohsin Mahaboob Basha
+- Varsha HV
+
 ## A few pictures with the team
 
 ![image](https://github.com/user-attachments/assets/d12e2dcb-a3df-429f-bd40-8e67884e07ab)
