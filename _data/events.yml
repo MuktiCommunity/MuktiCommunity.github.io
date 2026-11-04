@@ -1,21 +1,16 @@
 # _data/events.yml
 
-- title: "GIT IT DONE: Hands-On Guide to Git, GitHub & Open Source"
-  date: "5th November 2026 • 1:30 PM – 4:30 PM"
-  location: "DES Hi-Tech Seminar Hall, Ramaiah Institute of Technology"
-  description: "Hands-on introduction to Git fundamentals, GitHub workflows, and making your first open source contribution. Bring your laptop with VS Code installed. Certificate of participation and snacks provided!"
-  tags: ["Git", "GitHub", "FOSS", "OpenSource"]
-  link: "https://fossunited.org/c/ms-ramaiah-institute-of-technology/git-it-done/rsvp"
-  whatsapp: "https://chat.whatsapp.com/Efg270PnXlQL7oEZL0m1S9"
+- title: "Git It Done"
+  date: "Nov 5, 2026"
+  location: "DES Seminar Hall, MSRIT"
+  description: "Your hands-on guide to Git, GitHub, and Open Source. Bring your laptop with VS Code installed."
 
 - title: "Linux Installation Party"
-  date: "Upcoming (November 2026)"
-  location: "MSRIT Campus, Bangalore"
-  description: "Bring your laptop and join us to install and configure Linux with the community. Get hands-on help with distro selection, dual-booting, shell basics, and development tools."
-  tags: ["Linux", "FOSS", "Distros", "CLI"]
+  date: "Mid November 2026"
+  location: "MSRIT, Bangalore"
+  description: "Install and configure Linux with hands-on help from the community."
 
-- title: "Open Source Hardware Workshop"
-  date: "Upcoming (December 2026)"
-  location: "MSRIT Campus, Bangalore"
-  description: "Hands-on tinkering with microcontrollers, Raspberry Pi Pico, Arduino, and embedded circuits. Build cool DIY physical gadgets powered entirely by open-source tools."
-  tags: ["Hardware", "RPiPico", "Arduino", "Embedded"]
+- title: "Open Source Hardware"
+  date: "Early December 2026"
+  location: "MSRIT, Bangalore"
+  description: "Hands-on tinkering with microcontrollers, Arduino, and Raspberry Pi Pico."

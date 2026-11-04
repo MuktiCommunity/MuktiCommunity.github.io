@@ -5,7 +5,7 @@ nav: true
 hide_sharing: true
 ---
 
-![image](https://github.com/user-attachments/assets/6132b2a1-07e1-4028-8db5-1c99ee12944a)
+![Past Events - Session at DES Seminar Hall](/assets/images/cybersec_speaker_stage.jpg)
 
 ## Past Events Conducted by Mukti
 

@@ -4,7 +4,7 @@ title: "CyberSec: Exploring the Landscape, Tools and Hardware Exploits"
 date: 2026-09-24
 category: [event report, cyber security]
 tags: [event_doc, cyber security, hardware, tools]
-image: /assets/images/cyber_event_stage.jpg
+image: /assets/images/cybersec_talk_stage.jpg
 author: San, Praneel
 comments: true
 ---
@@ -126,10 +126,6 @@ Theory only gets you so far. We set up an active target challenge for attendees 
 - Solve the challenge: [satark_4 CTF](https://chrompycoder.github.io/satark_4/)
 
 ---
-
-### doubts
-
-For any doubts, questions, or bugs, reach out to Mukti Core on our [telegram group](https://t.me/MuktiCommunity) or ping the *Tech-help* section on the group.
 
 ### credits
 
