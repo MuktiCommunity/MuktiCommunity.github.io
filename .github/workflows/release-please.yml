@@ -6,7 +6,6 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  id-token: write
 
 name: release-please
 
@@ -17,13 +16,5 @@ jobs:
       - id: release
         uses: googleapis/release-please-action@v5
         with:
-          release-type: simple
-      - uses: actions/checkout@v4
-        if: ${{ steps.release.outputs.release_created }}
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-        if: ${{ steps.release.outputs.release_created }}
-      - uses: rubygems/release-gem@v1
-        if: ${{ steps.release.outputs.release_created }}
+          config-file: .release-please-config.json
+          manifest-file: .release-please-manifest.json

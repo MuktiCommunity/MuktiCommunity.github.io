@@ -1,17 +1,16 @@
 # _data/events.yml
 
-- title: "Satark"
-  date: "Second week of April"
-  location: "Bangalore"
-  description: "Mukti's annual introduction to cyber security event."
+- title: "Git It Done"
+  date: "Nov 5, 2026"
+  location: "DES Seminar Hall, MSRIT"
+  description: "Your hands-on guide to Git, GitHub, and Open Source. Bring your laptop with VS Code installed."
 
-- title: "Shell Day"
-  date: "End of April"
+- title: "Linux Installation Party"
+  date: "Mid November 2026"
   location: "MSRIT, Bangalore"
-  description: " Introduction to shell and using CLI in daily life."
+  description: "Install and configure Linux with hands-on help from the community."
 
-- title: "AI and Capabilities"
-  date: "Early May"
+- title: "Open Source Hardware"
+  date: "Early December 2026"
   location: "MSRIT, Bangalore"
-  description: " How AI is used in coding at high levels and leveraging opensource AI's."
-
+  description: "Hands-on tinkering with microcontrollers, Arduino, and Raspberry Pi Pico."
