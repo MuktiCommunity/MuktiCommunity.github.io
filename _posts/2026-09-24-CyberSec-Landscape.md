@@ -24,7 +24,7 @@ On 24th September 2026, Mukti conducted a session on the cybersecurity landscape
 - Black box learning
 - Cyber tools
 - Industry accepted certificates in Cyber-Security
-- Demonstration of Strom-Breaker and picoducky || USB dead-drop
+- Demonstration of Strom-Breaker and Pico Ducky (USB dead-drop)
 - Project Mania
 
 ## what do cyber-security professionals actually do?

@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="preload"
+      href="{{ '/assets/fonts/Raleway-Regular.ttf' | relative_url }}"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="{{ '/assets/fonts/Mulish-Regular.ttf' | relative_url }}"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
       href="{{ '/assets/css/dist-style.css' | relative_url }}"
       rel="stylesheet"
     />
@@ -11,7 +25,7 @@
       href="{{ '/assets/css/fonts.css' | relative_url }}"
       rel="stylesheet"
     />
-    {% if site.typewriter_effect %}
+    {% if site.typewriter_effect and page.layout == 'home' %}
     <script src="https://unpkg.com/typeit@8.8.4/dist/index.umd.js"></script>
     {% endif %} {% seo %} {% include custom_head.html %}
     <script type="module">
@@ -22,10 +36,13 @@
   </head>
 
   <body class="text-gray-700 dark:bg-gray-700 dark:text-slate-100" style="background-color: #FDF1E1">
-    {% if site.typewriter_effect %}
+    {% if site.typewriter_effect and page.layout == 'home' %}
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        new TypeIt("h1", {}).go();
+        const heroTitle = document.querySelector("#main h1");
+        if (heroTitle) {
+          new TypeIt(heroTitle, {}).go();
+        }
       });
     </script>
     {% endif %} {% include navbar.html %}
@@ -33,19 +50,6 @@
     {{ content }} {% include footer.html
     %}
     
-    <script>
-      document.querySelectorAll("a").forEach(function (link) {
-        link.addEventListener("click", function (event) {
-          event.preventDefault(); // Prevent the default link action temporarily
-          link.classList.add("gentle-clicked");
-
-          setTimeout(function () {
-            link.classList.remove("gentle-clicked");
-            window.location.href = link.href; // Navigate to the link after the animation
-          }, 300); // Duration of the gentle bounce animation
-        });
-      });
-    </script>
     <script id="dsq-count-scr" src="//{{ site.disqus_shortname }}.disqus.com/count.js" async></script>
   </body>
 </html>
