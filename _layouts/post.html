@@ -16,10 +16,6 @@ layout: default
       <p>{{ page.author }}</p>
       <p class="px-2">•</p>
       <p>{{ page.date | date: "%-d %B %Y" }}</p>
-      <p class="px-2">•</p>
-      <p>
-        {% assign words = content | number_of_words %}
-        {% if words < 360 %} 1 min {% else %} {{ words | divided_by: 180 }} mins {% endif %} </p>
     </div>
 
     <img class="mt-0" src="{{page.image | relative_url}}" alt="{{page.title}}">
