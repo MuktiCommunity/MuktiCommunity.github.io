@@ -11,9 +11,9 @@ comments: true
 
 ## welcome
 
-On 5th November 2026, Mukti conducted **Git It Done** at the DES Hi-Tech Seminar Hall in collaboration with the Department of Computer Science & Engineering (CSE), RIT, and FOSS United.
+Mukti conducted **Git It Done**, an intensive hands-on workshop focused on Git fundamentals, internal architecture, branching workflows, and open-source collaboration.
 
-The session was a terminal-first, hands-on workshop focused on version control mechanics, Git internal architecture, branching workflows, and open-source collaboration on GitHub.
+> **Step-by-Step Guide:** If you are reading this post and want to learn through the complete material, follow the official [Git It Done Workshop Guide](https://themdmohsin.github.io/git-it-done/). It contains the full step-by-step walkthrough, command exercises, and detailed explanations to follow along directly.
 
 ## what to expect
 
@@ -23,7 +23,7 @@ The session was a terminal-first, hands-on workshop focused on version control m
 - Core command-line workflow and commit hygiene
 - Branching mechanics and merge conflict resolution
 - Remote collaboration and the Pull Request (PR) lifecycle
-- Interactive workshop walkthrough guide
+- Dedicated hands-on workshop guide
 
 ## the concurrency and history problem
 
@@ -142,19 +142,18 @@ git push -u origin feature/event-page-updates
 4. **Open PR:** Submit a Pull Request comparing your fork's branch against upstream `main`.
 5. **Code Review & CI:** Automated linters and test suites validate the changes, maintainers review diffs, and the branch is merged.
 
-## workshop guide and community
+## workshop session
 
-Attendees brought their laptops and worked through hands-on exercises directly in the terminal:
-
-![Git It Done Hands-On Workshop at DES Seminar Hall](/assets/images/git_it_done_audience.jpg)
+Attendees worked through the exercises hands-on directly in their terminals:
 
 - **Interactive Workshop Guide:** [themdmohsin.github.io/git-it-done](https://themdmohsin.github.io/git-it-done/)
-- **Mukti GitHub Organization:** [github.com/MuktiCommunity](https://github.com/MuktiCommunity)
 
-![Git It Done Team at DES Seminar Hall](/assets/images/git_it_done_team.jpg)
+![Git It Done Audience](/assets/images/git_it_done_audience.jpg)
 
 ---
 
 ### credits
 
 Vijay Bharath TMS, Mohammed Mohsin Mahaboob Basha, Mukti Core
+
+![Git It Done Team](/assets/images/git_it_done_team.jpg)
