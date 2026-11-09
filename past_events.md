@@ -14,6 +14,14 @@ Over the years, we’ve organized a variety of events that blend hands-on learni
 into the world of Free and Open Source Software (FOSS), cybersecurity, hardware, and beyond. Here’s a look at some of our past events that
 sparked innovation, creativity, and endless possibilities.
 
+### Git It Done – A Hands-On Guide to Git, GitHub and Open Source
+
+![Git It Done Hands-On Workshop at DES Seminar Hall](/assets/images/git_it_done_audience.jpg)
+
+Held on November 5, 2026 at the DES Hi-Tech Seminar Hall, **Git It Done** was an intensive, hands-on workshop taking students from version control fundamentals to real-world open-source collaboration. Participants brought their laptops and worked through core concepts including repository initialization, staging snapshots, history tracking, branch workflows, and opening pull requests on GitHub.
+
+Read the [full Git It Done event report and guide](/event%20report/foss/2026/11/05/Git-It-Done.html).
+
 ### Tantra Yantra – A Hardware Playground with Raspberry Pi, Pico, and Arduino
 
 ![image](https://github.com/user-attachments/assets/d652843a-aa3b-4225-a698-0c5600a70f62)
@@ -83,6 +91,7 @@ Our past events, technical sessions, and hands-on workshops have been organized,
 
 ## A few pictures with the team
 
+![Git It Done Team at DES Seminar Hall](/assets/images/git_it_done_team.jpg)
 ![image](https://github.com/user-attachments/assets/d12e2dcb-a3df-429f-bd40-8e67884e07ab)
 ![image](https://github.com/user-attachments/assets/45a8061c-6563-4b00-addf-ccb00557f0a7)
 ![Mukti CyberSec Session at DES Seminar Hall](/assets/images/cyber_event_stage.jpg)

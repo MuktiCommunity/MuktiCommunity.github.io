@@ -1,10 +1,5 @@
 # _data/events.yml
 
-- title: "Git It Done"
-  date: "Nov 5, 2026"
-  location: "DES Seminar Hall, MSRIT"
-  description: "Your hands-on guide to Git, GitHub, and Open Source. Bring your laptop with VS Code installed."
-
 - title: "Linux Installation Party"
   date: "Mid November 2026"
   location: "MSRIT, Bangalore"
