@@ -5,170 +5,156 @@ date: 2026-11-05
 category: [event report, FOSS]
 tags: [event_doc, git, github, open-source]
 image: /assets/images/git_it_done_speakers.jpg
-author: Vijay Bharath, Mohammed Mohsin
+author: Vijay Bharath TMS, Mohammed Mohsin Mahaboob Basha
 comments: true
 ---
 
 ## welcome
 
-On 5th November 2026, Mukti (the FOSS club of Ramaiah Institute of Technology) conducted **Git It Done** at the DES Hi-Tech Seminar Hall in collaboration with the Department of Computer Science & Engineering (CSE), RIT, and FOSS United.
+On 5th November 2026, Mukti conducted **Git It Done** at the DES Hi-Tech Seminar Hall in collaboration with the Department of Computer Science & Engineering (CSE), RIT, and FOSS United.
 
-The session was an interactive, laptop-first workshop that took students through version control essentials, open-source philosophy, and collaborative workflows with Git and GitHub.
-
-![Git It Done Workshop Session](/assets/images/git_it_done_speakers.jpg)
+The session was a terminal-first, hands-on workshop focused on version control mechanics, Git internal architecture, branching workflows, and open-source collaboration on GitHub.
 
 ## what to expect
 
-- Why version control exists (the messy folder problem)
-- Open source and the wider movement (FOSS roots, licensing, community)
-- Personal software, vibe coding, and why version control matters more now
-- Linux and the scale problem (how Git was born)
-- Git vs GitHub
-- The 3 areas of Git and hands-on workflow
-- Branching, collaboration, and sending your first Pull Request (PR)
+- The concurrency and history problem in unversioned files
+- How Git works under the hood (Snapshots, Hashes, and DAG)
+- The three states of Git (Working Directory, Index, Repository)
+- Core command-line workflow and commit hygiene
+- Branching mechanics and merge conflict resolution
+- Remote collaboration and the Pull Request (PR) lifecycle
 - Interactive workshop walkthrough guide
 
-## why version control exists: the messy folder problem
+## the concurrency and history problem
 
-Before version control, people tried encoding history into filenames: `project_final.zip`, `project_final2.zip`, `project_final_REAL.zip`.
+Managing code without a version control system by manually naming files (`final.zip`, `final2.zip`, `final_REAL.zip`) fails for technical reasons:
 
-This approach breaks down immediately:
+- **No atomic checkpoints:** You cannot diff state, inspect line-by-line changes, or roll back cleanly without manual inspection.
+- **Race conditions & collisions:** When multiple developers edit files simultaneously, changes overwrite one another silently.
+- **No cryptographic provenance:** Lacks verifiable authorship, commit timestamps, and cryptographically linked parents.
 
-- **No real history:** You cannot see what changed between copies without manually comparing files line by line.
-- **No authorship:** No record of who made a specific change, when, or why.
-- **Collisions:** Multiple people editing "the latest" file simultaneously overwrite each other's work.
-- **No safe undo:** Deleting or overwriting a file means the previous state is permanently lost.
+While cloud storage syncs files, it does not support branching, deterministic conflict resolution, or commit hashes. Version control systems solve this by making history immutable, traceable, and mergeable.
 
-Cloud storage tools (Google Drive, Dropbox) sync copies automatically, but they do not record deliberate checkpoints, support parallel branching, or merge concurrent code edits. Version Control Systems (VCS) solve this problem systematically.
+## how git works under the hood
 
-## open source and the wider movement
+Git is fundamentally a content-addressable filesystem with a VCS user interface built on top of it.
 
-### what is open source?
+### snapshots, not deltas
 
-Open source software is software whose human-readable source code is made public under a license that gives anyone the freedom to use, study, modify, and distribute it.
+Older systems (like CVS and SVN) store changes as file deltas (differences from a base version). Git thinks of its data as a set of snapshots over time. Every time you commit, Git records a snapshot of what all your files look like at that moment. To be efficient, if a file has not changed, Git does not store the file again—it links to the previously stored identical file.
 
-- **The Free Software root:** Richard Stallman launched the GNU project in 1983 and the Free Software Foundation in 1985. "Free" refers to freedom (liberty), not price.
-- **FOSS:** Free and Open Source Software brings these traditions together. The "F" in Mukti stands for Free software.
-- **Mukti:** *Mukti* is the Sanskrit word for liberation and freedom, matching the core ethos of software freedom.
-- **Open Source Initiative (1998):** Formalized open-source definitions around the release of Netscape browser source code.
+### content-addressable storage
 
-### licenses matter
+Every piece of data stored in Git is indexed by a 40-character SHA-1 checksum calculated from its content and header. The four primary Git object types are:
 
-Visible code without a license is not open source—default copyright law reserves all rights to the author.
+- **Blobs:** Store raw file contents (independent of filenames or permissions).
+- **Trees:** Represent directories; map filenames and file modes to blob and sub-tree hashes.
+- **Commits:** Contain a pointer to a root tree, parent commit hash(es), author/committer metadata, and the commit message.
+- **Annotated Tags:** Permanent reference pointing directly to a specific commit hash.
 
-- **Permissive licenses (MIT, Apache 2.0):** Allow anyone to use, modify, and redistribute the code, even in proprietary products, provided original copyright notices are retained.
-- **Copyleft licenses (GPL):** Require derivative works to be released under the same license terms, ensuring freedom travels with the code.
+Because commit hashes depend on the entire history leading up to them, tampering with any past commit automatically changes all subsequent hashes.
 
-### everyday software built on open source
+## the three states of git
 
-- **Operating systems & Kernels:** Linux (powers servers, Android via AOSP, top 500 supercomputers, routers, Steam Deck)
-- **Browsers & Engines:** Chromium (base of Chrome, Edge, Brave), Firefox
-- **Languages & Frameworks:** Python, Node.js, React, PyTorch, TensorFlow
-- **Everyday tools:** Git, VS Code (MIT core), Blender, VLC Media Player, LibreOffice
+Git manages files across three local areas:
 
-Linus's Law states: *"Given enough eyeballs, all bugs are shallow."* Open source enables shared infrastructure, eliminates vendor lock-in, and acts as the world's largest open classroom.
+1. **Working Directory:** The active sandbox on disk containing files you edit.
+2. **Staging Area (Index):** A binary file (`.git/index`) holding the snapshot prepared for the next commit.
+3. **Repository (.git directory):** The database where Git permanently stores compressed object snapshots and reference pointers.
 
-Non-code contributions—documentation, design, bug triage, localization, and organizing events—are just as critical as writing code.
+```text
+[ Working Directory ]  --- git add --->  [ Staging Area (Index) ]  --- git commit --->  [ Repository (HEAD) ]
+         ^                                                                                     |
+         +--------------------------------- git checkout -------------------------------------+
+```
 
-## personal software and vibe coding
+## core command-line workflow
 
-Software creation has become faster and cheaper with modern AI assistance. Individuals can now build single-purpose tools for themselves—what writer Robin Sloan described as software like a "home-cooked meal," and what is often referred to as "vibe coding."
-
-In an AI-heavy software world, open source and version control become more important:
-
-- Generated applications are built on open-source libraries and protocols.
-- Fast code generation produces large volumes of changes quickly.
-- When changes accumulate rapidly, having a precise history, audit trail, and safe undo mechanism via Git is essential to avoid breaking working systems.
-
-## how git was born
-
-In 1991, 21-year-old student Linus Torvalds released the Linux kernel under GPLv2. As thousands of developers around the globe began contributing patches, tracking changes via email became unmanageable.
-
-From 2002 to 2005, the Linux team used BitKeeper (a commercial distributed VCS that offered free access to kernel developers). In April 2005, that relationship broke down.
-
-Linus Torvalds took two weeks to design and write Git from scratch with clear architectural goals:
-
-- **Distributed:** Every clone holds the entire project history; network access is not required for daily commits or diffs.
-- **Speed & Scale:** Fast patching and branching tailored for thousands of contributors.
-- **Cryptographic integrity:** Every commit, tree, and blob is indexed by a SHA-1 hash. History cannot be altered retroactively without invalidating downstream hashes.
-- **Snapshots over deltas:** Git stores snapshots of files across time rather than recording file differences.
-
-Since late 2005, Git has been maintained by Junio Hamano and remains the global standard for version control.
-
-## git vs github
-
-- **Git:** The local command-line tool running on your machine. Tracks local files, records commits, and manages branches offline.
-- **GitHub:** A cloud-based hosting platform for Git repositories. Adds collaboration layers: issues, pull requests, code reviews, automated CI/CD (GitHub Actions), and hosting (GitHub Pages).
-
-## the core workflow (hands-on)
-
-### the three areas of git
-
-1. **Working Directory:** Files currently on your disk that you edit.
-2. **Staging Area (Index):** The draft snapshot of changes selected for the next commit.
-3. **Repository (.git):** The permanent history of committed snapshots.
-
-### essential commands
+### repository initialization and configuration
 
 ```bash
-# Configure identity (one-time setup)
+# Set author identity for commit metadata
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 
-# Initialize a new repository
+# Initialize a new Git repository in the current directory
 git init
-
-# Check working tree status
-git status
-
-# Stage files for commit
-git add <filename>
-git add .               # Stage all modified and new files
-
-# Commit staged changes with a concise message
-git commit -m "feat: add user authentication flow"
-
-# View commit history
-git log --oneline --graph
-
-# Connect local repo to remote GitHub repository
-git remote add origin https://github.com/<username>/<repo-name>.git
-git branch -M main
-git push -u origin main
 ```
 
-### branching and pull requests (PR)
+### staging and committing changes
 
-Branching isolates work so main branches remain stable:
+```bash
+# Check working tree and staging status
+git status
+
+# Inspect unstaged changes against the index
+git diff
+
+# Stage specific file or all modified/new files
+git add <filename>
+git add .
+
+# Inspect staged changes prepared for commit
+git diff --staged
+
+# Create an atomic commit snapshot with a descriptive message
+git commit -m "feat(auth): add token validation middleware"
+```
+
+### inspecting repository history
+
+```bash
+# View formatted single-line commit graph
+git log --oneline --graph --decorate -n 10
+```
+
+## branching, merging, and pull requests
+
+### branching mechanics
+
+In Git, a branch is not a copy of files; it is a 41-byte pointer to a commit hash (`.git/refs/heads/<branch>`). When you switch branches, Git points `HEAD` to that branch reference and updates the working tree to match the target commit snapshot.
 
 ```bash
 # Create and switch to a feature branch
 git checkout -b feature/event-page-updates
 
-# Stage and commit your changes
+# Work on files, stage, and commit
 git add .
 git commit -m "docs: add hands-on workshop summary"
+```
 
-# Push feature branch to remote
+### remote repository setup and pushing
+
+```bash
+# Add a remote origin pointing to GitHub
+git remote add origin https://github.com/<username>/<repo-name>.git
+
+# Rename default branch to main and push upstream
+git branch -M main
 git push -u origin feature/event-page-updates
 ```
 
-Once pushed, navigate to GitHub to open a **Pull Request (PR)**, review code diffs, run automated checks, and merge.
+### the pull request (PR) lifecycle
+
+1. **Fork & Branch:** Fork the upstream project on GitHub and create a dedicated topic branch locally.
+2. **Commit:** Keep commits small, isolated, and cleanly documented.
+3. **Push:** Push the feature branch to your fork on GitHub.
+4. **Open PR:** Submit a Pull Request comparing your fork's branch against upstream `main`.
+5. **Code Review & CI:** Automated linters and test suites validate the changes, maintainers review diffs, and the branch is merged.
 
 ## workshop guide and community
 
-Students followed along with hands-on exercises using the dedicated event guide:
+Attendees brought their laptops and worked through hands-on exercises directly in the terminal:
 
-- **Interactive Event Guide:** [themdmohsin.github.io/git-it-done](https://themdmohsin.github.io/git-it-done/)
-- **Mukti GitHub Community:** [github.com/MuktiCommunity](https://github.com/MuktiCommunity)
+![Git It Done Hands-On Workshop at DES Seminar Hall](/assets/images/git_it_done_audience.jpg)
 
-![Git It Done Hands-On Audience at DES Seminar Hall](/assets/images/git_it_done_audience.jpg)
+- **Interactive Workshop Guide:** [themdmohsin.github.io/git-it-done](https://themdmohsin.github.io/git-it-done/)
+- **Mukti GitHub Organization:** [github.com/MuktiCommunity](https://github.com/MuktiCommunity)
 
-![Git It Done Organizing Team](/assets/images/git_it_done_team.jpg)
+![Git It Done Team at DES Seminar Hall](/assets/images/git_it_done_team.jpg)
 
 ---
 
 ### credits
 
-Conducted and mentored by Vijay Bharath TMS, Mohammed Mohsin Mahaboob Basha, and Mukti Core.
-Special thanks to the Department of Computer Science & Engineering, RIT, and FOSS United.
+Vijay Bharath TMS, Mohammed Mohsin Mahaboob Basha, Mukti Core
